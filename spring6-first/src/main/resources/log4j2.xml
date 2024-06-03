@@ -13,8 +13,8 @@
         -->
         <root level="DEBUG">
             <appender-ref ref="spring6log"/>
-            <appender-ref ref="RollingFile"/>
-            <appender-ref ref="log"/>
+<!--            <appender-ref ref="RollingFile"/>-->
+<!--            <appender-ref ref="log"/>-->
         </root>
     </loggers>
 

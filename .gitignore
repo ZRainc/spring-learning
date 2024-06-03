@@ -24,3 +24,4 @@ hs_err_pid*
 replay_pid*
 /.idea/
 /sourcecode/spring6/guigu-spring.iml
+/spring6-first/target/

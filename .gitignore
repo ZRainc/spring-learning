@@ -25,3 +25,4 @@ replay_pid*
 /.idea/
 /sourcecode/spring6/guigu-spring.iml
 /spring6-first/target/
+/spring6-ioc-xml/target/

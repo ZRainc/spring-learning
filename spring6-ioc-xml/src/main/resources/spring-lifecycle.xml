@@ -12,4 +12,7 @@
         <property name="age" value="23"></property>
     </bean>
 
+    <!-- bean的后置处理器要放入IOC容器才能生效 -->
+    <bean id="myBeanProcessor" class="com.rain.spring.process.MyBeanProcessor"/>
+
 </beans>

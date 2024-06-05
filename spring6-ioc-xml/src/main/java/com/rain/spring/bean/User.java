@@ -16,6 +16,7 @@ public class User {
     private Integer age;
 
     public User() {
+        System.out.println("生命周期：1、创建对象");
     }
 
     public User(Integer id, String username, String password, Integer age) {
@@ -30,6 +31,7 @@ public class User {
     }
 
     public void setId(Integer id) {
+        System.out.println("生命周期：2、依赖注入");
         this.id = id;
     }
 
@@ -55,6 +57,14 @@ public class User {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public void initMethod(){
+        System.out.println("生命周期：3、初始化");
+    }
+
+    public void destroyMethod(){
+        System.out.println("生命周期：5、销毁");
     }
 
     @Override

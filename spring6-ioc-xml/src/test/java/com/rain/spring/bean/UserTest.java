@@ -18,4 +18,12 @@ public class UserTest {
         User user2 = ac.getBean(User.class);
         System.out.println(user1==user2); //singleton -> true, prototype -> false
     }
+
+    @Test
+    public void testLife(){
+        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("spring-lifecycle.xml");
+        User bean = ac.getBean(User.class);
+        System.out.println("生命周期：4、通过IOC容器获取bean并使用");
+        ac.close();
+    }
 }

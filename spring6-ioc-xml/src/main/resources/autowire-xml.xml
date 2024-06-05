@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--autowire by type-->
+<!--    <bean id="userController" class="com.rain.spring.controller.UserController" autowire="byType"></bean>-->
+<!--    <bean id="userService" class="com.rain.spring.service.Impl.UserServiceImpl" autowire="byType"></bean>-->
+<!--    <bean id="userDao" class="com.rain.spring.dao.Impl.UserDaoImpl" autowire="byType"></bean>-->
+
+    <!--autowire by name-->
+    <bean id="userController" class="com.rain.spring.controller.UserController" autowire="byName"></bean>
+    <bean id="userService" class="com.rain.spring.service.Impl.UserServiceImpl" autowire="byName"></bean>
+    <bean id="userServiceImpl" class="com.rain.spring.service.Impl.UserServiceImpl" autowire="byName"></bean>
+    <bean id="userDao" class="com.rain.spring.dao.Impl.UserDaoImpl" autowire="byName"></bean>
+    <bean id="userDaoImpl" class="com.rain.spring.dao.Impl.UserDaoImpl" autowire="byName"></bean>
+</beans>

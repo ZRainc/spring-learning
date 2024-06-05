@@ -26,4 +26,13 @@ public class UserTest {
         System.out.println("生命周期：4、通过IOC容器获取bean并使用");
         ac.close();
     }
+
+    @Test
+    public void testUserFactoryBean(){
+        //获取IOC容器
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-factorybean.xml");
+        User user = (User) ac.getBean("user");
+        System.out.println(user);
+    }
+
 }

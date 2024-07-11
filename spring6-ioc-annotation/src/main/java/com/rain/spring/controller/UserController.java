@@ -12,8 +12,13 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class UserController {
-    @Autowired
+
     private UserService userService;
+
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
 
     public void out() {
         userService.out();
